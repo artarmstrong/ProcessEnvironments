@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * Process Environments
+ *
+ * ProcessWire 2.x 
+ * Copyright (C) 2014 by Art Armstrong
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ */
+
+class ProcessEnvironments extends Process implements ConfigurableModule {
+
+	/**
+	 * Return information about this module (required)
+	 *
+	 */
+	public static function getModuleInfo() {
+		return array(
+			'title' => 'Environments', 
+			'summary' => 'Add multiple environments for differnt development stages.',
+			'version' => 1, 
+			'author' => 'Art Armstrong',
+			'permission' => 'environments'
+			);
+	}
+	
+	public function init() {
+    // initialize your module, setup hooks, or leave blank if you don't need it
+    // but this init() function must be present. 
+  }
+  
+}
